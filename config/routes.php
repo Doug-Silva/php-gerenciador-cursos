@@ -5,6 +5,7 @@ use Alura\Cursos\Controller\FormularioInsercao;
 use Alura\Cursos\Controller\Persistencia;
 use Alura\Cursos\Controller\Exclusao;
 use Alura\Cursos\Controller\FormularioEdicao;
+use Alura\Cursos\Controller\FormularioLogin;
 
 $rotas = [
     '/listar-cursos' => ListarCursos::class,
@@ -12,6 +13,7 @@ $rotas = [
     '/salvar-curso' => Persistencia::class,
     '/excluir-curso' => Exclusao::class,
     '/alterar-curso' => FormularioEdicao::class,
+    '/login' => FormularioLogin::class
 ];
 
 return $rotas;

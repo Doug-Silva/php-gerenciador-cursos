@@ -14,7 +14,8 @@ class Persistencia implements InterfaceControladorRequisicao
 
     public function __construct()
     {
-        $this->entityManager = (new EntityManagerCreator())->getEntityManager();
+        $this->entityManager = (new EntityManagerCreator())
+            ->getEntityManager();
     }
 
     public function processaRequisicao(): void

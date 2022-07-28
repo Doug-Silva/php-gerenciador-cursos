@@ -7,6 +7,7 @@ use Alura\Cursos\Controller\Exclusao;
 use Alura\Cursos\Controller\FormularioEdicao;
 use Alura\Cursos\Controller\FormularioLogin;
 use Alura\Cursos\Controller\RealizarLogin;
+use Alura\Cursos\Controller\Deslogar;
 
 $rotas = [
     '/listar-cursos' => ListarCursos::class,
@@ -15,7 +16,8 @@ $rotas = [
     '/excluir-curso' => Exclusao::class,
     '/alterar-curso' => FormularioEdicao::class,
     '/login' => FormularioLogin::class,
-    '/realiza-login' => RealizarLogin::class
+    '/realiza-login' => RealizarLogin::class,
+    '/logout' => Deslogar::class,
 ];
 
 return $rotas;

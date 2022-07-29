@@ -14,12 +14,10 @@ class Usuario
      * @Column(type="integer")
      */
     private $id;
-
     /**
      * @Column(type="string")
      */
     private $email;
-
     /**
      * @Column(type="string")
      */
